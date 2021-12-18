@@ -8,8 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         features = "src/test/resources/features",
-        //tags = "@login",
-        //tags ="@cocoadslogin",
-        tags="@selleroffice-signup"
+//        tags = "@login",
+//        tags ="@cocoadslogin",
+//        tags="@selleroffice-signup"
+        tags="@signup_test"
 )
 public class CucumberTestSuite {}

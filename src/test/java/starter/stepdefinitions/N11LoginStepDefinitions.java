@@ -7,14 +7,15 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.ensure.Ensure;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import starter.n11.navigation.login.LoginAsUser;
 import starter.n11.navigation.tasks.NavigateTo;
+import starter.n11.navigation.user_interface.n11SignUpPageElements;
 import starter.n11.navigation.user_interface.n11UserHomePageElements;
 
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.containsText;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.hasValue;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
 
 public class N11LoginStepDefinitions {
